@@ -15,7 +15,7 @@
 	<body>
 		<div id="overTop"> pet Shop</div>
 		<div id="top">
-			<input class="topButton" value="Register" onclick=" "/>
+			<input class="topButton" value="Register" onclick="location.href='registerWindow.html';"/>
 			<input class="topButton" value="Sign Up" onclick="signIn()"/>
 			<input type="submit" id="searchButton" value="Search" onclick=" " style="float:right"/>
 			<input type="text" id="searchBox" style="float:right"/>
@@ -29,11 +29,17 @@
 		
 		<div id="modal">
 			<div id="signUpWindow">
+				<span id="usernameText">Username</span>
 				<input type="text" id="loginField"/>
-				<input type="text" id="passwordField"/>
-				<input id="bt" value="Log in" onclick=" "/>
 				<div style="clear:both;"></div>
-				<div id="errorText">Your username or password is incorrect.</div>
+				<span id="passwordText">Password</span>
+				<input type="text" id="passwordField"/>
+				<div style="clear:both;"></div>
+				<span id="errorText">Your username or password is incorrect.</span>
+				<div style="clear:both;"></div>
+				<input type="submit" id="cancelButton" class="bt" value="Cancel" onclick="cancelLogging()"/>
+				<input type="submit" id="logInButton" class="bt" value="Log in" onclick=" "/>
+				<div style="clear:both;"></div>
 			</div>
 		</div>
 	</body>
